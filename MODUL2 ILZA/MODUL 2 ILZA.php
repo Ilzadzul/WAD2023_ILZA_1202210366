@@ -93,11 +93,11 @@ if (empty($tinggi_badan) || empty($berat_badan)) {
                     <!-- Hasilnya perhitungan BMI taruh di sini yaaa!! 😊 -->
                     <?php
                     $bmi = $berat_badan / ($tinggi_meter * $tinggi_meter);
-                    if ($bmi < 18.5) {
+                    if ($bmi <= 18.4) {
                     $kategori = "Underweight";
                     } elseif ($bmi >= 18.5 && $bmi < 24.9) {
-                     $kategori = "Normal Weight";
-                    } elseif ($bmi >= 25 && $bmi < 29.9) {
+                     $kategori = "Normal";
+                    } elseif ($bmi >= 25.0 && $bmi < 39.9) {
                     $kategori = "Overweight";
                      } elseif ($bmi >=40) {
                      $kategori = "Obese";
